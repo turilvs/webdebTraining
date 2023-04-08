@@ -1,0 +1,82 @@
+:root {
+  font-family: 'Courier New';
+  font-size: 16px;
+}
+
+body {
+    color: black;
+    background-color: rgb(252, 251, 248);
+    margin: 0;
+    padding: 0;
+  }
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(141, 139, 133);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgb(93, 91, 88);
+}
+
+ .navbar {
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   top: 0;
+   left: 0;
+ }
+ .navbar ul {
+   display: flex; 
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   height: 5em;
+   background-color: rgb(141, 139, 133) ;
+   font-size: 1.2em;
+ }
+
+ 
+ .navbar li {
+  border-radius: 15px;
+  padding:0.2em;
+  margin: 0.8em;
+  font-size: 1.2em;
+  transition: all 100ms ease;
+  
+ }
+
+ .navbar a {
+   color:rgb(252, 251, 248);
+   width: 2em;
+   text-decoration: none;
+   transition: all 200ms ease;
+ }
+
+ .navbar li:hover {
+   background-color:  rgb(181, 178, 170, 0.4);
+   padding: 1em;
+   margin: 0em;
+ }
+
+h1 {
+    text-align:center;
+    font-size: 2em;
+}
+
+ul { 
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sisalto {
+     
+    padding-left: 25%;
+    padding-right: 25%;
+}
