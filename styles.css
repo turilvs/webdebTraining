@@ -22,42 +22,43 @@ body::-webkit-scrollbar-thumb {
   background: rgb(93, 91, 88);
 }
 
+.otsikko {
+  font-size: 1.2em;
+  left: 0.5em;
+  margin: 0.2em;
+}
+
  .navbar {
-   width: 100%;
-   margin: 0;
-   padding: 0;
-   list-style: none;
-   top: 0;
-   left: 0;
- }
- .navbar ul {
    display: flex; 
-   flex-direction: row;
+   background-color: rgb(141, 139, 133);
    align-items: center;
    justify-content: center;
-   height: 5em;
-   background-color: rgb(141, 139, 133) ;
+   width: 100%;
    font-size: 1.2em;
  }
+ .menu-links ul {
+   display: flex; 
+   flex-direction: row;
+ }
 
- 
- .navbar li {
+ .menu-links li {
+  height: 1em;
   border-radius: 15px;
   padding:0.2em;
   margin: 0.8em;
   font-size: 1.2em;
   transition: all 100ms ease;
+ }
+
+ .menu-links a {
   
+  color:rgb(252, 251, 248);
+  width: 2em;
+  text-decoration: none;
+  transition: all 200ms ease;
  }
 
- .navbar a {
-   color:rgb(252, 251, 248);
-   width: 2em;
-   text-decoration: none;
-   transition: all 200ms ease;
- }
-
- .navbar li:hover {
+ .menu-links li:hover {
    background-color:  rgb(181, 178, 170, 0.4);
    padding: 1em;
    margin: 0em;
@@ -70,7 +71,7 @@ h1 {
 
 ul { 
     text-align: center;
-    list-style-type: none;
+    list-style: none;
     margin: 0;
     padding: 0;
 }
@@ -79,4 +80,75 @@ ul {
      
     padding-left: 25%;
     padding-right: 25%;
+}
+
+.toggle-button {
+ border-radius: 10px;
+ padding:0.4em;
+ display: none;
+ flex-direction: column;
+ justify-content: space-between;
+ width: 30px;
+ height: 1em;
+ transition: all 200ms ease;
+}
+
+.toggle-button:hover {
+  background-color:  rgb(181, 178, 170, 0.4);
+  padding: 0.4em;
+}
+
+.toggle-button .bar {
+   height: 0.2em;
+   width: 100%;
+   background-color: black; 
+   border-radius: 0.1em;
+}
+
+@media (max-width:600px) {
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(141, 139, 133);
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.2em;
+  }
+
+  .toggle-button{
+    position: absolute;
+    right: 0.1em;
+    display: flex;
+  }
+
+  .menu-links ul {
+    /* width: 100%; */
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu-links {
+    width: 100%;
+    display: none;
+  }
+
+  .menu-links.active {
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu-links li {
+    border-radius: 0.4em;
+    margin: 0;
+    padding: 0.2em;
+    transition: all 200ms ease;
+  }
+
+  .menu-links ul li:hover {
+    background-color:  rgb(181, 178, 170, 0.4);
+    padding: 0.2em;
+  }
 }
