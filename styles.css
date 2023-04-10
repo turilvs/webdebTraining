@@ -105,6 +105,25 @@ ul {
    border-radius: 0.1em;
 }
 
+footer {
+  display: flex; 
+  background-color: rgb(141, 139, 133);
+  font-size: 1.2em;
+  align-items: center;
+  justify-content: center;
+}
+.footer-nav {
+
+  width: 100%;
+  display: flex;
+  padding-top: .7em;
+  padding-bottom: .7em;
+}
+
+.footer-nav li {
+  margin-left: .9em;
+}
+  
 @media (max-width:600px) {
 
   .navbar {
