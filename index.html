@@ -108,16 +108,17 @@
         <h2>Comment Box</h2>
 
         <div class="comment-list">
-          <textarea></textarea>
+          <!-- <p class="output" id="output1"></p> -->
+          <textarea class="output" id="output1"></textarea>
         </div>
         <form>
           <div class="comment-data">
-            <input type="text" name="user" id="user" placeholder="Nickname" />
-            <textarea placeholder="Comment"></textarea>
+            <input id="nickname" type="text" placeholder="Nickname" />
+            <textarea id="comment" placeholder="Write a comment"></textarea>
           </div>
           <div class="comment-btn">
-            <button type="submit" value="comment">Send</button>
-            <button type="submit" value="cancel">Cancel</button>
+            <input type="button" id="send-btn" value="Send" />
+            <button id="cancel-btn" type="submit">Cancel</button>
           </div>
         </form>
       </div>
