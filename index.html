@@ -107,14 +107,18 @@
       <div class="comment-box">
         <h2>Comment Box</h2>
 
-        <div class="comment-list">
+        <div class="comments">
           <!-- <p class="output" id="output1"></p> -->
-          <textarea class="output" id="output1"></textarea>
+          <div class="comment-view" id="comment-view"></div>
         </div>
         <form>
-          <div class="comment-data">
+          <div class="create-comment">
             <input id="nickname" type="text" placeholder="Nickname" />
-            <textarea id="comment" placeholder="Write a comment"></textarea>
+            <textarea
+              id="comment"
+              type="text"
+              placeholder="Write a comment"
+            ></textarea>
           </div>
           <div class="comment-btn">
             <input type="button" id="send-btn" value="Send" />

@@ -151,28 +151,31 @@ footer {
   text-align: center;
 }
 
-.comment-list {
-  display: flex;
-  margin-bottom: .3em;
-}
 
-.comment-list textarea {
+.comments {
+  display: flex;
+  flex-direction: column-reverse;
+  overflow: scroll;
+  overflow-wrap: break-word;
+  scrollbar-width: 2px;
+  padding: 0;
   width: 100%;
+  background-color: grey;
   aspect-ratio: 16/9;
   margin-bottom: .3em;
   resize: none;
 }
 
-.comment-data {
+.create-comment {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
-.comment-data textarea{
+.create-comment textarea{
   resize: none;
 }
 
-.comment-data textarea , .comment-data input{
+.create-comment textarea , .create-comment input{
   margin-bottom: .3em;
   border: 1px solid black;
   font-size: 1em;
