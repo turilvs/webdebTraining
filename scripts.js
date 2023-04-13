@@ -12,7 +12,7 @@ toggleButton.addEventListener('click', () => {
 const nickname = document.getElementById('nickname')
 const sendButton = document.getElementById('send-btn') 
 const cancelButton = document.getElementById('cancel-btn') 
-const comment = document.getElementById('comment');
+const comment = document.getElementById('comment')
 const output = document.getElementById('comment-view') 
 
 
