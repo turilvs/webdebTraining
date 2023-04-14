@@ -135,18 +135,20 @@ footer {
 
 .comment-box {
   display: flex;
+  background-color: #6C8A93;
   flex-direction: column;
   width: 80%;
   margin-top: 4em;
   margin-bottom: 4em;
   padding: 1em;
-  border-radius: .1em;
-  border: 1px solid black;
+  border-radius: 1em;
+  border: .2em solid #223C48;
   
 }
 
 .comment-box h2 {
   margin-top: 0;
+  color: white;
   margin-bottom: .3em;
   text-align: center;
 }
@@ -154,16 +156,22 @@ footer {
 
 .comments {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
+  justify-content: flex-end;
   overflow-y: scroll;
   overflow-wrap: break-word;
-  scrollbar-width: 2px;
-  padding: 0;
   width: 100%;
-  background-color: grey;
+  background-color: #f0f7ee;
   aspect-ratio: 16/9;
   margin-bottom: .3em;
   resize: none;
+}
+
+.comments .message {
+  margin: 0.1em;
+  color:#223C48;
+  font-size: 1.2em;
+  
 }
 
 .create-comment {
@@ -177,10 +185,10 @@ footer {
 
 .create-comment textarea , .create-comment input{
   margin-bottom: .3em;
-  border: 1px solid black;
+  border: 0px;
+  border-radius: .3em;
   font-size: 1em;
-  background-color: transparent;
-
+  background-color: #D3DAD1;
 }
   
 @media (max-width:600px) {
