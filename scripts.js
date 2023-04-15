@@ -16,24 +16,30 @@ const comment = document.getElementById('comment')
 const output = document.getElementById('comments') 
 
 
-nickname.addEventListener('input', () => {
-    let nick = document.createTextNode(nickname.value)
-    console.log(nickname.innerText)
-})
-comment.addEventListener('keyup', function(event) {
-    
-    if (event.key === "Enter") {
+nickname.addEventListener('keypress', function(event) {
+    if (event.key == 'Enter'){
         event.preventDefault()
-        sendMessage(comment.value)
+        comment.focus()
+    }
+})
+comment.addEventListener('keypress', function(event) {
+    
+    if (event.key == 'Enter'){
+        event.preventDefault()
+        sendMessage()
     }
 })
 
 function sendMessage() {
-
+    if (nickname.value == '' ||
+     comment.value == ''
+      ) {
+        console.log('tyhjä arvo')
+        return
+    }
     let content = `${nickname.value}: ${comment.value}`
     const p = document.createElement('p');
         p.className = 'message'
-        // p.id = 
         p.textContent = content
         output.appendChild(p)
         comment.value = ''
