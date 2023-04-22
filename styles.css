@@ -129,22 +129,21 @@ footer {
   margin-left: .9em;
 }
 
-.projects {
-  margin-left: 20%;
-  margin-right: 20%;
+.commentBox-container {  
+  background-color: rgb(232, 237, 235);
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
 }
 
 .comment-box {
   display: flex;
   background-color: #6C8A93;
   flex-direction: column;
-  width: 60%;
-  margin-top: 4em;
-  margin-bottom: 4em;
+  width: 40vw;
   padding: 1em;
   border-radius: 1em;
   border: .2em solid #223C48;
@@ -220,10 +219,11 @@ footer {
   color:  #D3DAD1;
 }
 
-.transition-next {
+#t2{
+  border: 0;
   width: 100%;
-  height: 20em;
-  background-image: linear-gradient(rgb(252, 251, 248), rgb(35, 56, 49));
+  height: 60vh;
+  background-image: linear-gradient(rgb(232, 237, 235), rgb(35, 56, 49));
 }
 
 .gallery-container {
